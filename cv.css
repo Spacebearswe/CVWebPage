@@ -1,0 +1,107 @@
+/* Global Mobile Styles (default styles) */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.flex {
+    border-style: solid;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    
+}
+.flex.green.horizontal-center {
+    border: 3px solid black;
+    border-color: green; /* Green border for green flex container */
+    background-color: yellowgreen; /* Green background for green flex container */
+}
+.yellow{
+    border: 3px solid black;
+    border-color: yellow;
+    background-color: lightyellow;
+}
+.flex.yellow.horizontal-center{
+    border: 3px solid black;
+    border-color: yellow;
+    background-color: lightyellow;
+}
+.flex.red.horizontal-center {
+    border: 3px solid black;
+    border-color: red;
+    background-color: lightcoral;
+}
+.flex.blue.horizontal-center {
+    border: 3px solid black;
+    border-color: blue;
+    background-color: lightblue;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.left {
+    /* Add your styles for the left section here */
+    border: 3px solid black;
+    border-style: solid;
+    border-color: blue;
+    height: 400px;
+    width: 40%;
+    background-color: lightblue;
+}
+
+.right {
+    /* Add your styles for the right section here */
+    border: 3px solid black;
+    border-style: solid;
+    border-color: red;
+    height: 400px;
+    width: 60%;
+    background-color: lightcoral;
+}
+
+.flex-container {
+    display: flex;
+}
+
+/* Tablet View (min-width: 768px) */
+
+@media (min-width: 768px) {
+
+    body {
+        background-color: #f4f4f4;
+    }
+
+    .container {
+        max-width: 800px;
+    }
+}
+
+/* Desktop View (min-width: 1024px) */
+
+@media (min-width: 1024px) {
+
+    body {
+        background-color: #e0e0e0;
+    }
+
+    .container {
+        max-width: 1000px;
+    }
+}
